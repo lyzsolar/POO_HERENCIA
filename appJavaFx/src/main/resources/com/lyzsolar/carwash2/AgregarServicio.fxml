@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lyzsolar.carwash2.controllers.AgregarServicioController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3cadef" height="160.0" stroke="#45b7e4" strokeType="INSIDE" width="910.0" />
+      <ImageView fitHeight="310.0" fitWidth="235.0" layoutX="673.0" layoutY="213.0">
+         <image>
+            <Image url="@images/COCHE.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="161.0" fitWidth="200.0" layoutY="-1.0">
+         <image>
+            <Image url="@images/carcacha6.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="262.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡ LA CARCACHITA EXPRESS !">
+         <font>
+            <Font name="Comic Sans MS" size="43.0" />
+         </font>
+      </Text>
+      <Text fill="#191a1a" layoutX="89.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" textAlignment="CENTER" wrappingWidth="445.5832567811012">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="precioText" layoutX="68.0" layoutY="257.0" prefHeight="33.0" prefWidth="471.0" style="-fx-border-color: #3cadef; -fx-background-radius: 5;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Text fill="#191a1a" layoutX="105.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio" textAlignment="CENTER" wrappingWidth="401.1387682557106">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nombreText" layoutX="68.0" layoutY="196.0" prefHeight="33.0" prefWidth="471.0" style="-fx-border-color: #3cadef; -fx-background-radius: 5;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Text fill="#191a1a" layoutX="95.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción" textAlignment="CENTER" wrappingWidth="419.8054247498512">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="descripText" layoutX="67.0" layoutY="326.0" prefHeight="192.0" prefWidth="473.0" style="-fx-border-color: #3cadef; -fx-background-radius: 5;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="save" layoutX="120.0" layoutY="534.0" mnemonicParsing="false" onMouseClicked="#onClickSaveButton" prefHeight="51.0" prefWidth="127.0" style="-fx-background-color: #3cadef; -fx-border-radius: 5;" text="Guardar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="exit" layoutX="356.0" layoutY="534.0" mnemonicParsing="false" onMouseClicked="#onClickExitButton" prefHeight="51.0" prefWidth="127.0" style="-fx-background-color: #3cadef; -fx-border-radius: 5;" text="Salir" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
